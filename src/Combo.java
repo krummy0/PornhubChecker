@@ -42,7 +42,7 @@ public class Combo {
     private void parse(String[] data, char delimiter) {
         for (String str : data) {
         	try {
-        		String split[] = str.split("\\Q" + delimiter + "\\E", 1);
+        		String split[] = str.split("\\Q" + delimiter + "\\E", 2);
         		if (split[0].contains("@")) {
         			emails.add(split[0]);
         			passes.add(split[1]);
